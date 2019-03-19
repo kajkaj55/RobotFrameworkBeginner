@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generator="Robot 3.1.1 (Python 3.4.3 on win32)" generated="20190319 13:56:56.771">
+<suite source="C:\Users\mohamed.kadjdahi\SeleniumWebDriver\FirstRobotProject" name="FirstRobotProject" id="s1">
+<suite source="C:\Users\mohamed.kadjdahi\SeleniumWebDriver\FirstRobotProject\FirstRobotTest" name="FirstRobotTest" id="s1-s1">
+<suite source="C:\Users\mohamed.kadjdahi\SeleniumWebDriver\FirstRobotProject\FirstRobotTest\TestSuite1.robot" name="TestSuite1" id="s1-s1-s1">
+<test name="SampleLoginTest" id="s1-s1-s1-t1">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg level="INFO" timestamp="20190319 13:56:57.143">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<status status="PASS" starttime="20190319 13:56:57.142" endtime="20190319 13:57:00.981"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20190319 13:57:00.982" endtime="20190319 13:57:00.985"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=txtUsername</arg>
+<arg>@{CREDENTIALS}[0]</arg>
+</arguments>
+<msg level="INFO" timestamp="20190319 13:57:00.987">Typing text 'Admin' into text field 'id=txtUsername'.</msg>
+<status status="PASS" starttime="20190319 13:57:00.986" endtime="20190319 13:57:01.134"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=txtPassword</arg>
+<arg>&amp;{LOGINDATA}[password]</arg>
+</arguments>
+<msg level="INFO" timestamp="20190319 13:57:01.136">Typing password into text field 'id=txtPassword'.</msg>
+<status status="PASS" starttime="20190319 13:57:01.135" endtime="20190319 13:57:01.249"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>id=btnLogin</arg>
+</arguments>
+<msg level="INFO" timestamp="20190319 13:57:01.251">Clicking button 'id=btnLogin'.</msg>
+<status status="PASS" starttime="20190319 13:57:01.250" endtime="20190319 13:57:02.570"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id=welcome</arg>
+</arguments>
+<msg level="INFO" timestamp="20190319 13:57:02.572">Clicking element 'id=welcome'.</msg>
+<status status="PASS" starttime="20190319 13:57:02.571" endtime="20190319 13:57:02.692"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>link=Logout</arg>
+</arguments>
+<msg level="INFO" timestamp="20190319 13:57:02.695">Clicking element 'link=Logout'.</msg>
+<status status="PASS" starttime="20190319 13:57:02.693" endtime="20190319 13:57:03.868"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20190319 13:57:03.870" endtime="20190319 13:57:06.195"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Test completed</arg>
+</arguments>
+<msg level="INFO" timestamp="20190319 13:57:06.197">Test completed</msg>
+<status status="PASS" starttime="20190319 13:57:06.196" endtime="20190319 13:57:06.197"></status>
+</kw>
+<doc>this is a simple LoginTest</doc>
+<status status="PASS" starttime="20190319 13:56:57.140" endtime="20190319 13:57:06.198" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20190319 13:56:56.872" endtime="20190319 13:57:06.200"></status>
+</suite>
+<status status="PASS" starttime="20190319 13:56:56.868" endtime="20190319 13:57:06.204"></status>
+</suite>
+<status status="PASS" starttime="20190319 13:56:56.826" endtime="20190319 13:57:06.206"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" name="FirstRobotProject" pass="1" id="s1">FirstRobotProject</stat>
+<stat fail="0" name="FirstRobotTest" pass="1" id="s1-s1">FirstRobotProject.FirstRobotTest</stat>
+<stat fail="0" name="TestSuite1" pass="1" id="s1-s1-s1">FirstRobotProject.FirstRobotTest.TestSuite1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
